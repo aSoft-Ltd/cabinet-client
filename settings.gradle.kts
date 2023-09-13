@@ -16,11 +16,11 @@ fun includeSubs(base: String, path: String = base, vararg subs: String) {
 }
 
 listOf(
-    "cinematic", "keep", "lexi", "neat",
-    "symphony", "epsilon", "kollections",
-    "koncurrent", "kommander", "cabinet-api"
+    "cinematic", "keep", "lexi", "neat", "symphony", 
+    "epsilon-api", "kollections", "koncurrent", 
+    "kommander", "cabinet-api",
 ).forEach { includeBuild("../$it") }
 
 rootProject.name = "cabinet-client"
 
-includeSubs("cabinet-client", ".", "scenes")
+includeSubs("cabinet", ".", "scenes")
